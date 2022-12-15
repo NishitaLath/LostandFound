@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Signup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="SIGNUP"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_margin="18dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@id/signup"
+        android:background="#20000000"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rollno"
+        android:layout_below="@id/name"
+        android:background="#20000000"
+        android:hint="Roll Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_fingerprint_24"
+        android:drawablePadding="16dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@id/rollno"
+        android:background="#20000000"
+        android:hint="Institute Email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:drawablePadding="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toggle1"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/username"
+        android:textColorHint="@color/black">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_below="@id/username"
+            android:background="#20000000"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:drawablePadding="16dp"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toggle2"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@+id/toggle1"
+        android:textColorHint="@color/black">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conpassword"
+            android:layout_below="@id/toggle1"
+            android:background="#20000000"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:drawablePadding="16dp"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:layout_below="@id/toggle2"
+        android:background="#20000000"
+        android:hint="Phone Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="16dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wano"
+        android:layout_below="@id/phone"
+        android:background="#20000000"
+        android:hint="WhatsApp Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_message_24"
+        android:drawablePadding="16dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pp"
+        android:layout_below="@id/wano"
+        android:background="#20000000"
+        android:hint="Upload Profile PIcture"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_face_24"
+        android:drawablePadding="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupbtn"
+        android:layout_below="@id/pp"
+        android:text="SUBMIT"
+        android:backgroundTint="#10000000"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="13dp"/>
+
+</RelativeLayout>

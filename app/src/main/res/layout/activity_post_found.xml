@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".PostFound">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Post for Found Item"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_margin="18dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@id/title"
+        android:background="#20000000"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:layout_below="@id/name"
+        android:background="#20000000"
+        android:hint="Phone Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="16dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemname"
+        android:layout_below="@id/phone"
+        android:background="#20000000"
+        android:hint="Item Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_category_24"
+        android:drawablePadding="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/whereFound"
+        android:layout_below="@id/itemname"
+        android:background="#20000000"
+        android:hint="Where did you find it?"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg"
+        android:layout_below="@id/whereFound"
+        android:background="#20000000"
+        android:hint="Message"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_insert_comment_24"
+        android:drawablePadding="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/photos"
+        android:layout_below="@id/msg"
+        android:background="#20000000"
+        android:hint="Photos"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/ic_baseline_collections_24"
+        android:drawablePadding="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitbtn"
+        android:layout_below="@id/photos"
+        android:text="SUBMIT"
+        android:backgroundTint="#10000000"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="13dp"/>
+
+</RelativeLayout>
